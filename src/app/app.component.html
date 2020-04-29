@@ -4,3 +4,11 @@
   <input type="text" [(ngModel)]="datahtml">
   <button (click)="ubahdata()">Ubah Data</button>
 </p>
+<div *ngFor="let data of arrdariglob">
+  {{data.no}} - {{data.isi}}
+</div>
+<div>
+  <input type="text" placeholder="Isi nomor data" [(ngModel)]="dno">
+  <input type="text" placeholder="Isi data baru" [(ngModel)]="dat">
+  <button (click)="save()">SAVE</button>
+</div>
